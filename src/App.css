@@ -1,62 +1,13 @@
-.App {
-  text-align: center;
+body, html, #root {
   margin: 0;
   padding: 0;
-
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
-  position: absolute;
-  height: 100lvh;
-  max-width: 100%;
-  display: flex;
-  justify-content: center; 
-  transform: rotate(180deg);
-  opacity: 0.42; /* Set the opacity to 80% */
-
-}
-
-.overlay-text {
-  position: absolute; /* Positions text over the image */
-  z-index: 2; /* Ensures the text is above the image */
-  color: white;
-  font-size: 2.5em;
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.25); /* Optional: Add a semi-transparent background to make the text more readable */
-}
-
-.Home {
-  background-color: #1a1b30;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #1a1b30;
-}
-
-.section {
-  padding: 100px 20px;
-  background-color: #282c34;
-  color: white;
-  text-align: left;
-}
-
-.section h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: 1.2em;
-  color: white;
-
-}
-
-.element {
-  min-height: 100vh;
+  display: none; /* Handled in App.js with sx */
 }
 
 .active {
