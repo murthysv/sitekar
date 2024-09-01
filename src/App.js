@@ -35,10 +35,9 @@ function App() {
   const [buttonColor, setButtonColor] = useState('info');
   const [groqCompletion, setGroqCompletion] = useState('');
   const [audioData, setAudioData] = useState(null);
-  const debug = true; // Set to false to disable debug logs
+  const debug = true; 
 
   const handleInputChange = (event) => {
-    if (debug) console.log('Input value changed:', event.target.value);
     setInputValue(event.target.value);
   };
 
@@ -66,7 +65,7 @@ function App() {
     setAudioData(data);
 
     const formData = new FormData();
-    formData.append('audio', data.audioFile);
+    formData.append('audio', data);
 
     fetch('http://localhost:4000/whisper', {
       method: 'POST',
@@ -75,7 +74,7 @@ function App() {
       .then((response) => response.json())
       .then((result) => {
         if (debug) console.log('Whisper result:', result);
-        setMessage(result.transcription);
+        setGroqCompletion(result.groqResponse);
       })
       .catch((error) => console.error('Error sending audio to Whisper:', error));
   };
@@ -110,7 +109,7 @@ function App() {
           Press & Ask me a Question
         </Button>
         <AudioRecorder
-          onStop={handleAudioStop}
+          onRecordingComplete={handleAudioStop}
           render={({ startRecording, stopRecording }) => (
             <>
               <Button variant="contained" color="primary" onClick={startRecording}>
