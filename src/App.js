@@ -123,7 +123,7 @@ function App() {
         />
         {groqCompletion && (
           <Typography variant="h6" sx={{ marginTop: '20px' }}>
-            Groq says: {groqCompletion}
+            {groqCompletion}
           </Typography>
         )}
       </OverlayText>
