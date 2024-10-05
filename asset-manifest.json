@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sitekar/static/css/main.cdd8d967.css",
+    "main.js": "/sitekar/static/js/main.853c9807.js",
+    "static/js/5.6bc0a3f5.chunk.js": "/sitekar/static/js/5.6bc0a3f5.chunk.js",
+    "static/js/806.6031adc6.chunk.js": "/sitekar/static/js/806.6031adc6.chunk.js",
+    "static/js/453.ed3810f9.chunk.js": "/sitekar/static/js/453.ed3810f9.chunk.js",
+    "static/media/circuit1.png": "/sitekar/static/media/circuit1.fddce39d2bd0847d4d63.png",
+    "index.html": "/sitekar/index.html",
+    "main.cdd8d967.css.map": "/sitekar/static/css/main.cdd8d967.css.map",
+    "main.853c9807.js.map": "/sitekar/static/js/main.853c9807.js.map",
+    "5.6bc0a3f5.chunk.js.map": "/sitekar/static/js/5.6bc0a3f5.chunk.js.map",
+    "806.6031adc6.chunk.js.map": "/sitekar/static/js/806.6031adc6.chunk.js.map",
+    "453.ed3810f9.chunk.js.map": "/sitekar/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdd8d967.css",
+    "static/js/main.853c9807.js"
+  ]
+}
